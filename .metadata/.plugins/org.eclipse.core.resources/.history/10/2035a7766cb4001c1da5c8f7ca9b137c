@@ -4,16 +4,16 @@ import java.util.Scanner;
 
 import javax.swing.JOptionPane;
 
-public class JOptionPanel {
+public class JOptionPane2 {
 
 	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in);
+		
 		
 		JOptionPane.showMessageDialog(null, "Digite seu nome: ", "Bem vindo!",JOptionPane.PLAIN_MESSAGE);
-		String nome = scan.nextLine();
+		String nome = JOptionPane.showInputDialog("Digite seu nome: ");
 		
 		JOptionPane.showMessageDialog(null, "Digite sua idade: ", "Olá " + nome ,JOptionPane.QUESTION_MESSAGE);
-		int idade = scan.nextInt();
+		String idade = JOptionPane.showInputDialog("Digite sua idade: ");
 		
 		JOptionPane.showMessageDialog(null, "Olá " + nome + " sua idade é " + idade, "Aperte ok para fechar!",JOptionPane.INFORMATION_MESSAGE);
 		
@@ -22,7 +22,7 @@ public class JOptionPanel {
 		
 		
 		
-		scan.close();
+		
 		
 		//		JOptionPane.showMessageDialog(null, "Hello", "MENSAGEM DE Atencao",JOptionPane.WARNING_MESSAGE);
 	}

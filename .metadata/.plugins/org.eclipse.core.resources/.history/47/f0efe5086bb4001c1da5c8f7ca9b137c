@@ -8,21 +8,21 @@ public class JOptionPanel {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		
-		JOptionPane.showMessageDialog(null, "Digite seu nome: ", "Bem vindo!",JOptionPane.PLAIN_MESSAGE);
+		JOptionPane.showMessageDialog(null, "Digite seu nome: ", "Bem vindo!",JOptionPane.INFORMATION_MESSAGE);
 		String nome = scan.nextLine();
-		
-		JOptionPane.showMessageDialog(null, "Digite sua idade: ", "Olá " + nome ,JOptionPane.QUESTION_MESSAGE);
+		JOptionPane.showMessageDialog(null, "Digite sua idade: ", "Bem vindo!",JOptionPane.QUESTION_MESSAGE);
 		int idade = scan.nextInt();
 		
-		JOptionPane.showMessageDialog(null, "Olá " + nome + " sua idade é " + idade, "Aperte ok para fechar!",JOptionPane.INFORMATION_MESSAGE);
+		
+		
+		JOptionPane.showMessageDialog(null, "Olá " + nome + "sua idade é " + idade, "Bem vindo!",JOptionPane.INFORMATION_MESSAGE);
 		
 		
 		
 		
 		
 		
-		scan.close();
+		
 		
 		//		JOptionPane.showMessageDialog(null, "Hello", "MENSAGEM DE Atencao",JOptionPane.WARNING_MESSAGE);
 	}

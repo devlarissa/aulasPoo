@@ -22,7 +22,7 @@ public class JOptionPanel {
 		
 		
 		
-		scan.close();
+		
 		
 		//		JOptionPane.showMessageDialog(null, "Hello", "MENSAGEM DE Atencao",JOptionPane.WARNING_MESSAGE);
 	}
