@@ -26,15 +26,15 @@ public class JOptionPanel {
  * 							   yes_no_cancel_option ou 1
  * 							   ok_cancel_option ou 2
  * 
- * sintaxe: int resp = JOptionPane.showCorfirmDialog(component, "ensagem", "titulo", <botoes>, <tipomensagem>)
+ * sintaxe: int resp = JOptionPane.showMessageDialog(component, "mensagem", "titulo", <botoes>, <tipomensagem>)
  *
  * ex: 
- * resp = JOptionPane.showCorfirmDialog(numm, "salvar", "salvando arquivo", JOptionPane.yes_no_cancel_option, JOptionPane.QUESTION_MESSAGE);
+ * resp = JOptionPane.showMessageDialog(numm, "salvar", "salvando arquivo", JOptionPane.yes_no_cancel_option, JOptionPane.QUESTION_MESSAGE);
 **/
 		
 		
 		scan.close();
 		
-		//		JOptionPane.showCorfirmDialog(null, "Hello", "MENSAGEM DE Atencao",JOptionPane.WARNING_MESSAGE);
+		//		JOptionPane.showMessageDialog(null, "Hello", "MENSAGEM DE Atencao",JOptionPane.WARNING_MESSAGE);
 	}
 }

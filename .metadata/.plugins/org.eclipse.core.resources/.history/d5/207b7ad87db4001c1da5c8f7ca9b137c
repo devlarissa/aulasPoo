@@ -1,0 +1,11 @@
+package aula_8;
+
+import javax.swing.JOptionPane;
+
+public class Main {
+
+	public static void main(String[] args) {
+		JOptionPane.showInputDialog(null, "Voce quer buscar ou cadastrar um cliente?", "Olá", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+		
+	}
+}
