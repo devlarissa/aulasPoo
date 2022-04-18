@@ -9,7 +9,7 @@ public class Main {
 	public static void main(String[] args) {
 		int op = JOptionPane.showConfirmDialog(null, "Voce quer buscar ou cadastrar um cliente?", "Olá", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
 		
-		int id, tel;
+		int tel;
 		String nome, end, email, cpf;
 		
 		LinkedList<Cliente> listaDeClientes = new LinkedList<Cliente>();
