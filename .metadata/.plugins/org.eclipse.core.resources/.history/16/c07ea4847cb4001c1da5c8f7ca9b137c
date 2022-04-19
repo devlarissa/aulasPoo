@@ -1,9 +1,0 @@
-package aula_8;
-
-public class JOptionPane_exercicio {
-
-	public static void main(String[] args) {
-		String nome, data_nascimento, cpf;
-		int idade;
-	}
-}

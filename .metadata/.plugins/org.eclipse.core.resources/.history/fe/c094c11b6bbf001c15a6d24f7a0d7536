@@ -1,0 +1,12 @@
+package aula_10_ex2;
+
+public class Principal {
+	public static void main(String[] args) {
+		
+		try{
+			Cadastro cad = new Cadastro(123, "Teste");
+		} catch(Exception e) {
+			System.out.println(e.getMessage());
+		}
+	}
+}

@@ -1,0 +1,40 @@
+package aula_10_ex3;
+
+import javax.swing.JOptionPane;
+
+public class CalculadoraException {
+
+public static void main(String[] args) {
+		
+		float numero1, numero2, result = 0;
+		
+		String operacao = JOptionPane.showInputDialog("Digite a operação: \nEx: som, sub, div, mult");
+		numero1 = Float.parseFloat(JOptionPane.showInputDialog("Digite o primeiro numero: "));
+		numero2 = Float.parseFloat(JOptionPane.showInputDialog("Digite o segundo numero: "));
+		
+		switch(operacao){
+		case "som":
+			result = numero1 + numero2;
+			JOptionPane.showMessageDialog(null, "O resultado é " + Float. toString(result), "result", JOptionPane.INFORMATION_MESSAGE);
+			break;
+		case "sub":
+			result = numero1 - numero2;			
+			JOptionPane.showMessageDialog(null, "O resultado é " + Float. toString(result), "result", JOptionPane.INFORMATION_MESSAGE);
+			break;
+		case "mult":
+			result = numero1 * numero2;
+			JOptionPane.showMessageDialog(null, "O resultado é " + Float. toString(result), "result", JOptionPane.INFORMATION_MESSAGE);
+			break;
+		case "div":
+			
+			try{
+				result = numero1 / numero2;
+//				JOptionPane.showMessageDialog(null, "O resultado é " + Float. toString(result), "result", JOptionPane.INFORMATION_MESSAGE);
+			} catch(Exception e) {
+				JOptionPane.showMessageDialog(null, "não é possivel dividir por zero" + e.getMessage(), "divisao por zero", JOptionPane.ERROR_MESSAGE);
+			}
+			break;
+		}
+		
+	}
+}
